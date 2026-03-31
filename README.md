@@ -143,4 +143,4 @@ This project is licensed under the MIT License - see the [LICENSE](./assets/LICE
 
 ## Acknowledgments
 
-*   This project was developed as a university lab project by [aka-assB0T](https://github.com/aka-assB0T).
+*   This project was developed as a university (North Western University, Khulna) lab project by [aka-assB0T](https://github.com/aka-assB0T).
