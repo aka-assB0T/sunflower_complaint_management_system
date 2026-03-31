@@ -5,6 +5,9 @@
 
 A basic complaint management system built with Python, Tkinter, and SQLite, originally developed as a university lab project. This desktop application provides a simple interface for users to submit complaints and for administrators to view and manage complaint records.
 
+## Motivation
+The goal of this project was to create an easy-to-use system for handling complaints within a community. It provides a simple and intuitive interface for users to submit complaints, and for administrators to review and manage them.
+
 ## Table of Contents
 
 -   [Features](#features)
@@ -123,10 +126,17 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 
 Please ensure your code adheres to PEP 8 style guidelines.
 
+
+### **Screenshots**
+Why not run and see yourself?
+
+
 ## License
+(assets/LICENSE)
 
-This project currently does not have an explicit license specified. Users are advised to contact the owner for licensing terms if they intend to use, distribute, or modify the software.
-
-## Acknowledgments
+## Future Enhancements
+- Add user authentication to allow for multiple user roles (admin/user).
+- Allow users to track the status of their complaints.
+- Improve the GUI with better visuals.
 
 *   This project was developed as a university lab project by [aka-assB0T](https://github.com/aka-assB0T).
