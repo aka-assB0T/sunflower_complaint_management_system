@@ -132,11 +132,15 @@ Why not run and see yourself?
 
 
 ## License
-(assets/LICENSE)
+This project is licensed under the MIT License - see the [LICENSE](./assets/LICENSE) file for details.
+
 
 ## Future Enhancements
 - Add user authentication to allow for multiple user roles (admin/user).
 - Allow users to track the status of their complaints.
 - Improve the GUI with better visuals.
+
+
+## Acknowledgments
 
 *   This project was developed as a university lab project by [aka-assB0T](https://github.com/aka-assB0T).
