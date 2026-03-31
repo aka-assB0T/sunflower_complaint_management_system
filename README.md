@@ -18,6 +18,7 @@ The goal of this project was to create an easy-to-use system for handling compla
 -   [Project Structure](#project-structure)
 -   [Configuration](#configuration)
 -   [Contributing](#contributing)
+-   [Screenshots](#screenshots)
 -   [License](#license)
 -   [Acknowledgments](#acknowledgments)
 
@@ -127,7 +128,7 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 Please ensure your code adheres to PEP 8 style guidelines.
 
 
-### **Screenshots**
+## **Screenshots**
 Why not run and see yourself?
 
 
