@@ -54,8 +54,8 @@ Follow these steps to get the project up and running on your local machine:
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/aka-assB0T/sunflower_complaint_management_system.git
-    cd sunflower_complaint_management_system
+    git clone https://github.com/aka-assB0T/Sunflower-Complaint-Management-System.git
+    cd Sunflower-Complaint-Management-System
     ```
 
 2.  **Create a virtual environment** (recommended):
