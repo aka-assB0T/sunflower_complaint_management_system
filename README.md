@@ -1,7 +1,7 @@
 # Sunflower Complaint Management System
 
 ![Project Banner](assets/a.png)
-*(Note: This image path is based on the project structure and assumes `a.png` is the main landing screen image.)*
+*(Note: This image is `a.png`, it is the main landing screen image, and it is collected from Google Images by a ZEE5 series named "Sunflower". I just used the image as a background; you can have it or change it. No intention of promoting anything)*
 
 A basic complaint management system built with Python, Tkinter, and SQLite, originally developed as a university lab project. This desktop application provides a simple interface for users to submit complaints and for administrators to view and manage complaint records.
 
