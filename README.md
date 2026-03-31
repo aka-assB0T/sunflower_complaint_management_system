@@ -1,90 +1,132 @@
-# Sunflower
+# Sunflower Complaint Management System
 
-Sunflower is a desktop based complaint management system built with Python, Tkinter, and SQLite.
-It was originally developed as a university project and provides a simple interface for submitting complaints and viewing complaint records through an admin login.
+![Project Banner](assets/a.png)
+*(Note: This image path is based on the project structure and assumes `a.png` is the main landing screen image.)*
+
+A basic complaint management system built with Python, Tkinter, and SQLite, originally developed as a university lab project. This desktop application provides a simple interface for users to submit complaints and for administrators to view and manage complaint records.
+
+## Table of Contents
+
+-   [Features](#features)
+-   [Technologies Used](#technologies-used)
+-   [Prerequisites](#prerequisites)
+-   [Installation & Setup](#installation--setup)
+-   [Usage](#usage)
+-   [Project Structure](#project-structure)
+-   [Configuration](#configuration)
+-   [Contributing](#contributing)
+-   [License](#license)
+-   [Acknowledgments](#acknowledgments)
 
 ## Features
 
-1. Submit complaints through a GUI form
-2. Store complaint data in SQLite
-3. View submitted complaints in a table
-4. Separate user submission page and admin view page
-5. Image based landing screen
+*   **GUI-based Complaint Submission**: Users can submit complaints through an intuitive graphical user interface form.
+*   **Local Data Storage**: Complaint data is securely stored in a local SQLite database (`complaintDB.db`).
+*   **Admin Complaint Listing**: Administrators can view all submitted complaints in a sortable and readable table format.
+*   **Separate User/Admin Views**: Distinct interfaces for complaint submission (user) and complaint review (admin).
+*   **Image-based Landing Screen**: A visually appealing initial screen upon launching the application.
+*   **Robust Database Handling**: Uses `configdb.py` to manage database connections, table creation, and data insertion.
 
-## Tech Stack
+## Technologies Used
 
-1. Python
-2. Tkinter
-3. SQLite
-4. Pillow
+*   **Languages**:
+    *   Python
+*   **Libraries/Frameworks**:
+    *   **Tkinter**: Standard Python GUI toolkit for building the desktop application interface.
+    *   **SQLite3**: Python's built-in module for working with SQLite databases.
+    *   **Pillow (PIL Fork)**: Used for image processing, likely for handling the landing screen image (`assets/a.png`).
 
-## Project Structure
+## Prerequisites
 
-```text
-sunflower_github_ready/
-├── assets/
-│   └── a.png
-├── main.py
-├── complaintListing.py
-├── configdb.py
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
+Before you begin, ensure you have the following installed on your system:
 
-## How to Run
+*   **Python 3.x**: The project is built with Python. You can download it from [python.org](https://www.python.org/downloads/).
+    *   Tkinter is usually included with standard Python installations.
+    *   SQLite3 is also built-in with Python.
 
-1. Clone the repository
-2. Open the project folder in terminal
-3. Install dependencies
-4. Run the main file
+## Installation & Setup
+
+Follow these steps to get the project up and running on your local machine:
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/aka-assB0T/sunflower_complaint_management_system.git
+    cd sunflower_complaint_management_system
+    ```
+
+2.  **Create a virtual environment** (recommended):
+    ```bash
+    python -m venv venv
+    ```
+
+3.  **Activate the virtual environment**:
+    *   **On Windows**:
+        ```bash
+        .\venv\Scripts\activate
+        ```
+    *   **On macOS/Linux**:
+        ```bash
+        source venv/bin/activate
+        ```
+
+4.  **Install the required dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+To run the application, simply execute the `main.py` file:
 
 ```bash
-pip install -r requirements.txt
 python main.py
 ```
 
-## Database Note
+Upon launching:
 
-The app automatically creates the `complaintDB.db` database file when it runs.
-Because of that, the database file does not need to be uploaded to GitHub.
-This is also safer if the file contains test data or personal information.
+1.  An initial splash screen (using `assets/a.png`) will appear.
+2.  You will then be presented with options, typically to either submit a complaint or log in as an administrator to view existing complaints.
+3.  **To submit a complaint**: Fill out the form fields (First Name, Last Name, Address, Gender, Comment) and click the submit button.
+4.  **To view complaints (Admin)**: Select the admin option, which will display a table populated with all complaints stored in `complaintDB.db`.
 
-## Default Admin Login
+## Project Structure
 
-```text
-Username: u1
-Password: 123
+```
+.
+├── .gitignore               # Specifies intentionally untracked files to ignore
+├── README.md                # This README file
+├── assets/                  # Directory for project assets like images
+│   └── a.png                # Landing screen image or application icon
+├── complaintListing.py      # Module for displaying and managing the list of complaints (Admin view)
+├── configdb.py              # Module for database connection, table creation, and CRUD operations
+├── main.py                  # Main application entry point, handles UI setup and navigation
+└── requirements.txt         # Lists Python dependencies
 ```
 
-For a public GitHub repository, it is better to mention that these credentials are only for demo use.
+## Configuration
 
-## Important Cleanup Before Publishing
+*   **Database File**: The application automatically creates an SQLite database file named `complaintDB.db` in the project root directory if it doesn't already exist.
+*   **Database Schema**: The `complainTable` schema (ID, FirstName, LastName, Address, Gender, Comment) is defined and managed within `configdb.py`. Modifications to the table structure should be made there.
+*   **UI Settings**: Basic UI configurations such as window geometry, titles, and background colors are set within `main.py` and `complaintListing.py`.
+*   **Image Assets**: The `assets/` directory holds images used by the application, with `a.png` serving as a primary visual element.
 
-1. Do not upload your local database file if it contains real entries
-2. Use the relative image path version of the app so it works on other computers
-3. Mention that this was a university learning project
-4. Add screenshots in the repository later if you want the repo to look better
+## Contributing
 
-## Suggested GitHub Description
+Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-A basic complaint management system built with Python, Tkinter, and SQLite as a university project.
+1.  **Fork** the repository.
+2.  **Create a new branch** for your feature or bug fix: `git checkout -b feature/your-feature-name`.
+3.  **Implement** your changes.
+4.  **Commit** your changes with a clear and descriptive message: `git commit -m "feat: Add new feature X"` or `git commit -m "fix: Resolve bug Y"`.
+5.  **Push** your branch to your forked repository: `git push origin feature/your-feature-name`.
+6.  **Open a Pull Request** to the `main` branch of this repository.
 
-## Suggested Topics
+Please ensure your code adheres to PEP 8 style guidelines.
 
-```text
-python tkinter sqlite desktop-app complaint-management university-project
-```
+## License
 
-## Future Improvements
+This project currently does not have an explicit license specified. Users are advised to contact the owner for licensing terms if they intend to use, distribute, or modify the software.
 
-1. Input validation
-2. Secure admin authentication
-3. Edit and delete complaint records
-4. Search and filter complaints
-5. Better UI styling and layout
-6. Export complaints to CSV or PDF
+## Acknowledgments
 
-## Disclaimer
-
-This project is shared for learning and portfolio purposes.
+*   This project was developed as a university lab project by [aka-assB0T](https://github.com/aka-assB0T).
